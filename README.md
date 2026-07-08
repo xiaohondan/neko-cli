@@ -1,6 +1,6 @@
 # Neko CLI
 
-> 通用包管理命令行工具，支持 PyPI、npm、自定义仓库三种包源。
+> 通用包管理命令行工具，支持 PyPI、npm、uv、自定义仓库四种包源。
 
 ## 安装
 
@@ -17,6 +17,7 @@ neko init
 # 安装包
 neko install requests                    # 默认从 PyPI
 neko install lodash --from npm           # 从 npm
+neko install requests --from uv           # 从 uv（极速，兼容 pip 接口）
 neko install my-plugin --from repo https://github.com/NekoDev/repo  # 自定义仓库
 neko install ./local-package.zip         # 本地安装
 
